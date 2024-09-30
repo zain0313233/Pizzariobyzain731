@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Pizzario</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="pizzariologo.jpg" style="" alt="">
+                    <h1 style="margin-top: 30px; margin-left: 5px; font-style: italic;">Pizzario</h1>
+                </div>
+                <div class="menu-container">
+                
+                    <button class="menu-btn"  style="" onclick="toggleMenu()">
+                        &#9776; <!-- This is the Unicode for the three horizontal lines -->
+                    </button>
+            
+                   
+                    <div id="menu" style="display: none;" class="vertical-menu">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="signup.html" style="margin-right: -16px;">signup</a></li>
+                    <li><a href="signup.html"><i class="fa-solid fa-right-to-bracket" style="color: black;size: 40px;"></i></a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <div class="signup-container">
+        <div class="page-logo" id="page-logo">
+            <img src="pizzariologo.jpg" style="width: 90px;height: 90px; border-radius: 50%;" alt="">
+        <h2>Login</h2>
+        </div>
+        
+        <form action="/signup" method="POST">
+          
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter username or mobile num" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+
+            <p class="or">OR</p>
+
+            <button type="button" class="google-btn">Continue with Google</button>
+            <button type="button" class="facebook-btn">Continue with Facebook</button>
+
+            <p class="login-link">Forget Password? <a href="/login">Click here</a></p>
+        </form>
+    </div>
+<footer>
+
+    <p>&copy; 2024 Pizzario. All Rights Reserved.</p>
+    <div class="footer-icon">
+    <p>Follow Us On |</p>
+    <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</footer>
+<script src="item.js"></script>
+</body>
+</html>

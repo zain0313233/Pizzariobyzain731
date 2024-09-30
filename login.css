@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.header{
+   
+    height:100px;
+    width: 100%;
+    background-color:burlywood;
+    display: flex;
+    margin-bottom: 20px;
+     
+    
+     
+       
+    }
+
+    
+    .navbar {
+      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    
+    }
+    .logo{
+        position: relative;
+        margin-left: 20px;
+        animation: slideright 3s ease forwards;
+        display: flex;
+    
+    }
+    .logo img{
+        width: 90px;height: 90px; border-radius: 50%;
+    }
+    .menu-container {
+        position: relative;
+    }
+    
+    .menu-btn {
+        font-size: 30px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        display: none; /* Hide the hamburger button on larger screens */
+    }
+    
+    .menu-btn:focus {
+        outline: none;
+    }
+    
+    .vertical-menu {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background-color: #333;
+        width: 100px;
+        position: absolute;
+        top: 50px; /* Just under the button */
+        left: 0;
+        border-radius: 5px;
+    }
+    
+    .vertical-menu a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        display: block;
+        text-align: left;
+    }
+    
+    .vertical-menu a:hover {
+        background-color: #575757;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 26px;
+        margin-left: 122%;
+        animation: slideright 5s ease forwards ;
+    
+      
+        
+    }
+    
+    
+    .nav-links a {
+     
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+       
+    }
+    .nav-links a:hover{
+    color: black;
+    
+    }
+    @keyframes slideleft{
+        0%{
+            transform: translatex(300px);
+        }
+        100%{
+            transform: translatey(0px);
+        }
+    }
+    @keyframes slideright{
+        0%{
+            transform: translateX(-150px);
+            opacity: 0;
+        }
+        100%{
+            opacity: 100%;
+            transform: translateY(0px);
+        }
+    }
+    
+
+.signup-container {
+   justify-content: center;
+    background-color: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 37%;
+}
+#page-logo{
+   margin-top: -20px;
+}
+
+.page-logo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: black;
+
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #e5533d;
+}
+
+.or {
+    margin: 15px 0;
+    color: #666;
+    font-weight: bold;
+}
+
+.google-btn, .facebook-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+}
+
+.google-btn:hover {
+    background-color: #357ae8;
+}
+
+.facebook-btn:hover {
+    background-color: #2d4373;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    margin-top: 40px;
+}
+footer .footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-icon a{
+    color: orange;
+    padding: 0px 10px;
+    
+}
+footer .footer-icon a:hover{
+    color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 360px) {
+    /* General Styles */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+ 
+ body {
+     line-height: 1.6;
+     font-family: Arial, sans-serif; 
+   
+ }
+ 
+ /* Header Section */
+ .header{
+    
+ height:80px;
+ width: 100%;
+ background-color:burlywood;
+ display: none;
+ margin-bottom:10px;
+  
+ 
+  
+    
+ }
+ 
+ .navbar {
+   
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    
+ 
+ }
+ .logo{
+ 
+     position: relative;
+     margin-left: 20px;
+     animation: slideright 3s ease forwards;
+     display: flex;
+ 
+ }
+ .logo img{
+     width: 70px;height: 70px; border-radius: 50%;
+ }
+ .logo h1{
+     font-size: 19px;
+ }
+ 
+ 
+ 
+ .menu-btn {
+     display: block;
+     margin-left: 140px;
+    /* Show the hamburger button only on screens 360px or smaller */
+ }
+ 
+ .vertical-menu {
+     margin-top: -8px;
+    margin-left: 76px;
+    width: 116px;
+     
+     display: flex;
+     background-color: orange;
+     color: black;
+ }
+ .vertical-menu a{
+     text-align: center;
+ 
+ }
+ 
+ .nav-links {
+     list-style: none;
+     display: none;
+     gap: 26px;
+     margin-left: 122%;
+     animation: slideright 5s ease forwards ;
+ 
+   
+     
+ }
+ 
+ 
+ .nav-links a {
+  
+     text-decoration: none;
+     color: white;
+     font-size: 1.2em;
+    
+ }
+ .nav-links a:hover{
+ color: black;
+ 
+ }
+
+ 
+
+    
+ @keyframes slideleft{
+     0%{
+         transform: translatex(300px);
+     }
+     100%{
+         transform: translatey(0px);
+     }
+ }
+ @keyframes slideright{
+     0%{
+         transform: translateX(-150px);
+         opacity: 0;
+     }
+     100%{
+         opacity: 100%;
+         transform: translateY(0px);
+     }
+ }
+ .signup-container {
+    justify-content: center;
+     background-color: white;
+     padding: 30px;
+     width: 100%;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     margin-left: 0%;
+ }
+ #page-logo{
+    margin-top: 10px;
+ }
+ 
+ .page-logo h2 {
+     font-size: 25px;
+     margin-bottom: 20px;
+ }
+ 
+ .form-group {
+     margin-bottom: 15px;
+     text-align: left;
+ }
+ 
+ .form-group label {
+     display: block;
+     font-size: 16px;
+     margin-bottom: 5px;
+     color: black;
+ 
+ }
+ 
+ .form-group input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 14px;
+ }
+ 
+ .login-btn {
+     width: 100%;
+     padding: 12px;
+     background-color:orange;
+     color: white;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 16px;
+     margin-top: 35px;
+ }
+ 
+ .login-btn:hover {
+     background-color:black;
+ }
+ 
+ .or {
+     margin: 15px 0;
+     color: #666;
+     font-weight: bold;
+ }
+ 
+ .google-btn, .facebook-btn {
+     width: 100%;
+     padding: 12px;
+     background-color: #4285F4;
+     color: white;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+     font-size: 16px;
+     margin-top: 10px;
+ }
+ 
+ .facebook-btn {
+     background-color: #3b5998;
+ }
+ 
+ .google-btn:hover {
+     background-color: #357ae8;
+ }
+ 
+ .facebook-btn:hover {
+     background-color: #2d4373;
+ }
+ 
+ .login-link {
+     margin-top: 20px;
+ }
+ 
+ .login-link a {
+     color: #ff6347;
+     text-decoration: none;
+     font-weight: bold;
+ }
+ 
+ .login-link a:hover {
+     text-decoration: underline;
+ }
+ 
+ 
+ 
+ 
+ /* Footer */
+ footer{
+     background-color: #333;
+     text-align: center;
+     padding: 20px;
+     height: 100px;
+     margin-top: 40px;
+     width: 100%;
+     display: none;
+ }
+ footer .footer-icon{
+     margin-top: 10px;
+     display: flex;
+     justify-content: center;
+ }
+ footer .footer-icon a{
+     color: orange;
+     padding: 0px 10px;
+     
+ }
+ footer .footer-icon a:hover{
+     color: black;
+     
+ }
+   }
+   

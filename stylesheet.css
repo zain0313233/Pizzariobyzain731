@@ -1,0 +1,1197 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+ 
+  
+}
+
+/* Header Section */
+.header{
+   
+height:100px;
+width: 100%;
+background-color:burlywood;
+display: flex;
+margin-bottom: 20px;
+ 
+
+ 
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles for larger screens (default) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-btn {
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Hide the hamburger button on larger screens */
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+.vertical-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background-color: #333;
+    width: 100px;
+    position: absolute;
+    top: 50px; /* Just under the button */
+    left: 0;
+    border-radius: 5px;
+}
+
+.vertical-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    display: block;
+    text-align: left;
+}
+
+.vertical-menu a:hover {
+    background-color: #575757;
+}
+
+
+
+.navbar {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+.logo{
+    position: relative;
+    margin-left: 20px;
+    animation: slideright 3s ease forwards;
+    display: flex;
+
+}
+.logo img{
+    width: 90px;height: 90px; border-radius: 50%;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+    margin-left: 122%;
+    animation: slideright 5s ease forwards ;
+
+  
+    
+}
+
+
+.nav-links a {
+ 
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+   
+}
+.nav-links a:hover{
+color: black;
+
+}
+.input-container1 {
+    position: relative;
+    margin-bottom: 20px;
+ 
+   
+}
+
+.input-container1 i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:black;
+    font-size: 18px;
+}
+
+.input-container1 input[type="text"]{
+    width: 100%;
+    padding: 15px 15px 15px 45px; /* Add padding to make space for the icon */
+    background-color:white;
+    border: 10px solid black;
+    /* outline-offset: 10px; */
+    
+    border: 1px solid black;
+    height: 60px;
+    border-radius: 5px;
+    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px; */
+}
+.input-container1 input::placeholder{
+    font-size: 16px;
+    font-style: italic;
+   
+}
+   
+
+
+/* Hero Section */
+.hero {
+    
+    height: 80vh;
+    animation: 30s zain  linear infinite;
+    background: url('pizza1.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes zain{
+    0%{
+        background-image: url(pizza1.jpg);
+    }
+    25%{
+    background-image: url(pizza2.jpg);
+    }
+    50%{
+        background-image: url(pizza3.jpg);
+    }
+    75%{
+        background-image: url(pizza4.jpg);
+    }
+    100%{
+        background-image: url(pizza5.jpg);
+    }
+
+}    
+@keyframes slideleft{
+    0%{
+        transform: translatex(300px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: bisque;
+    color: black;
+}
+
+/* Menu Highlight Section */
+.menu-highlight {
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-highlight h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    width: 30%;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.menu-item p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+/* Section Styling */
+.ourmenu {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.ourmenu h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Image Slider */
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Each Slide */
+.slide {
+    position: relative; /* This allows the buttons to be positioned absolutely within this container */
+    overflow: hidden; 
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.slide h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.cart-btn, .buy-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Position buttons absolutely */
+    bottom: 10px; /* Space from the bottom */
+}
+
+.cart-btn {
+    left: 30px; /* Align to the left */
+}
+
+.buy-btn {
+    right: 110px; /* Align to the right */
+}
+
+.cart-btn:hover, .buy-btn:hover {
+    background-color: #e5533d;
+}
+/* Arrow Styling */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+    
+}
+.blog-heading {
+    font-size: 3.5em; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 60px;/* Center align the heading */
+    margin-bottom: 50px; /* Space below the heading */
+    color:black /* Change color if needed */
+}
+.blog{
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    
+}
+
+
+.blog-content img{
+    
+    width: 500px;
+}
+.blog-content h1{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.blog-content{
+   
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+    text-align: justify;
+    box-shadow: 1px 1px 20px gray,
+        1px 1px 40px gray;
+
+}
+.blog-content-p{
+    margin-top: 0px;
+    padding: 10px 10px;
+ color: #666;
+}
+.blog-content-p a{
+    color: black;
+    font-weight: bold;
+}
+.blog-content-p #icon{
+    margin-left: 370px;
+   
+}
+.contact-heading{
+    font-size: 2.5em; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 60px;/* Center align the heading */
+    margin-bottom: 50px; /* Space below the heading */
+    color:black 
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.contact-text {
+    margin-top: -20px;
+    max-width: 45%;
+    text-align: justify;
+}
+
+
+
+
+
+.contact-text h4 {
+   
+    font-size: 29px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.contact-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.contact-list ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list ul li i {
+    color:orange;
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contact-icons a {
+    color:orange;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color:black;
+}
+
+.contact-form {
+    width: 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:orange;
+    font-size: 18px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container textarea {
+    width: 100%;
+    padding: 15px 15px 15px 45px; /* Add padding to make space for the icon */
+    background-color: #1c2d3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+.input-container textarea {
+    height: 150px;
+    resize: none;
+}
+
+.send {
+    background-color:orange;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.send:hover {
+    background-color:black;
+}
+.send:hover {
+    color:white;
+}
+
+
+/* Footer */
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    margin-top: 40px;
+}
+footer .footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-icon a{
+    color: orange;
+    padding: 0px 10px;
+    
+}
+footer .footer-icon a:hover{
+    color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 360px) {
+   /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif; 
+  
+}
+
+/* Header Section */
+.header{
+   
+height:80px;
+width: 100%;
+background-color:burlywood;
+display: flex;
+margin-bottom:10px;
+ 
+
+ 
+   
+}
+
+.navbar {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+.logo{
+
+    position: relative;
+    margin-left: 20px;
+    animation: slideright 3s ease forwards;
+    display: flex;
+
+}
+.logo img{
+    width: 70px;height: 70px; border-radius: 50%;
+}
+.logo h1{
+    font-size: 19px;
+}
+
+
+
+.menu-btn {
+    display: block;
+    margin-left: 140px;
+   /* Show the hamburger button only on screens 360px or smaller */
+}
+
+.vertical-menu {
+    margin-top: -8px;
+   margin-left: 76px;
+   width: 116px;
+    
+    display: flex;
+    background-color: orange;
+    color: black;
+}
+.vertical-menu a{
+    text-align: center;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    gap: 26px;
+    margin-left: 122%;
+    animation: slideright 5s ease forwards ;
+
+  
+    
+}
+
+
+.nav-links a {
+ 
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+   
+}
+.nav-links a:hover{
+color: black;
+
+}
+.input-container1 {
+    position: relative;
+    margin-bottom: 20px;
+ 
+   
+}
+
+.input-container1 i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:black;
+    font-size: 18px;
+}
+
+.input-container1 input[type="text"]{
+    width: 100%;
+    padding: 15px 15px 15px 45px; /* Add padding to make space for the icon */
+    background-color:white;
+    border: 10px solid black;
+    /* outline-offset: 10px; */
+    
+    border: 1px solid black;
+    height: 60px;
+    border-radius: 5px;
+    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px; */
+}
+.input-container1 input::placeholder{
+    font-size: 16px;
+    font-style: italic;
+   
+}
+   
+
+
+/* Hero Section */
+.hero {
+    
+    height: 80vh;
+    animation: 30s aown  linear infinite;
+    background: url('pizza1.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes aown{
+    0%{
+        background-image: url(mobi3.jpg);
+    }
+    25%{
+    background-image: url(mobi2.jpg);
+    }
+    50%{
+        background-image: url(mobi4.jpg);
+    }
+    75%{
+        background-image: url(mobi1.jpg);
+    }
+    100%{
+        background-image: url(pizza5.jpg);
+    }
+
+}    
+@keyframes slideleft{
+    0%{
+        transform: translatex(300px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: bisque;
+    color: black;
+}
+
+/* Menu Highlight Section */
+.menu-highlight {
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-highlight h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: block;
+    justify-content: space-around;
+}
+
+.menu-item {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.menu-item p {
+    margin-top: 5px;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+/* Section Styling */
+.ourmenu {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.ourmenu h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Image Slider */
+.image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Each Slide */
+.slide {
+    position: relative; /* This allows the buttons to be positioned absolutely within this container */
+    overflow: hidden; 
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.slide h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.buy-btn {
+    width: 36%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Position buttons absolutely */
+    bottom: 10px; /* Space from the bottom */
+    right:40px;
+}
+
+
+.cart-btn {
+    width: 40%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Position buttons absolutely */
+    bottom: 10px; 
+    left: 15px; /* Align to the left */
+}
+
+
+
+.cart-btn:hover, .buy-btn:hover {
+    background-color: #e5533d;
+}
+/* Arrow Styling */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:transparent;
+    color: black;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.prev-btn {
+    left: -4px;
+}
+
+.next-btn {
+    right: -10px;
+    
+}
+.blog-heading {
+    font-size: 1.5em; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 60px;/* Center align the heading */
+    margin-bottom: 50px; /* Space below the heading */
+    color:black /* Change color if needed */
+}
+.blog{
+    margin-top: 40px;
+    margin-left: 10px;
+    display: block;
+    
+    
+}
+
+
+.blog-content img{
+    
+    width: 300px;
+}
+.blog-content h1{
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.blog-content{
+   
+    width: 300px;
+
+    height: auto;
+    margin-left: 20px;
+    text-align: justify;
+    box-shadow: 1px 1px 20px gray,
+        1px 1px 40px gray;
+        margin-bottom: 50px;
+
+}
+.blog-content-p{
+    margin-top: 0px;
+    height:100px;
+    padding: 10px 10px;
+   
+ color: #666;
+}
+.blog-content-p p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limits the paragraph to 3 lines */
+    line-clamp: 2; /* Non-webkit standard, for future browsers */
+    white-space: normal;
+}
+.blog-content-p a{
+    color: black;
+    font-weight: bold;
+}
+.blog-content-p #icon{
+    margin-left: 370px;
+   
+}
+.contact-heading{
+    font-size: 1.5em; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 60px;/* Center align the heading */
+    margin-bottom: 50px; /* Space below the heading */
+    color:black 
+}
+.contact {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.contact-text {
+    margin-top: -20px;
+    max-width: 100%;
+    text-align: justify;
+}
+
+
+
+
+
+.contact-text h4 {
+   
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.contact-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.contact-list ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list ul li i {
+    color:orange;
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contact-icons a {
+    color:orange;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color:black;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:orange;
+    font-size: 18px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container textarea {
+    width: 100%;
+    padding: 15px 15px 15px 45px; /* Add padding to make space for the icon */
+    background-color: #1c2d3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+.input-container textarea {
+    height: 150px;
+    resize: none;
+}
+
+.send {
+    background-color:orange;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.send:hover {
+    background-color:black;
+}
+.send:hover {
+    color:white;
+}
+
+
+/* Footer */
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    margin-top: 40px;
+    width: 100%;
+}
+footer .footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-icon a{
+    color: orange;
+    padding: 0px 10px;
+    
+}
+footer .footer-icon a:hover{
+    color: black;
+    
+}
+  }
+  

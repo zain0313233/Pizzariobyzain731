@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzario - Delicious Pizza Delivered</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                
+                <img src="pizzariologo.jpg" style="" alt="">
+                <h1 style="margin-top: 30px; margin-left: 5px; font-style: italic;">Pizzario</h1>
+                
+
+            </div>
+            <div class="menu-container">
+                
+                <button class="menu-btn"  style="" onclick="toggleMenu()">
+                    &#9776; <!-- This is the Unicode for the three horizontal lines -->
+                </button>
+        
+               
+                <div id="menu" style="display: none;" class="vertical-menu">
+                    <a href="#home">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">SignUp</a>
+                    <a href="#menuu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menuu">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" style="margin-right: -16px;">Login</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-to-bracket" style="color: black;size: 40px;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <div class="input-container1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" name="search" placeholder="Search Item You Want" >
+    </div> -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Pizzario</h1>
+            <p>Your favorite pizza delivered hot and fresh!</p>
+            <a href="items.htm" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Menu Highlight Section -->
+    <section class="menu-highlight" id="menu">
+        <h2>Our Specials</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="pizza1.jpg" alt="Pepperoni Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>Cheesy pepperoni goodness</p>
+            </div>
+            <div class="menu-item">
+                <img src="pizza2.jpg" alt="Veggie Pizza">
+                <h3>Veggie Pizza</h3>
+                <p>A healthy mix of veggies</p>
+            </div>
+            <div class="menu-item">
+                <img src="pizza3.jpg" alt="BBQ Chicken Pizza">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Tangy BBQ flavor with chicken</p>
+            </div>
+        </div>
+    </section>
+    <section class="ourmenu" id="menuu">
+        <h2>Our Menu</h2>
+        <div class="slider-container">
+            <div class="image-slider">
+                <div class="slide">
+                    <img src="pizza1.jpg" alt="Pizza 1">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Cheesy pepperoni goodness</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="burger3.jpg" alt="Pizza 2">
+                    <h3>Cheese Explosion Burger</h3>
+                    <p>Melt-in-your-mouth beef patty loaded with gooey cheddar and mozzarella cheese</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="pizza3.jpg" alt="Pizza 3">
+                    <h3>BBQ Chicken Pizza</h3>
+                    <p>Tangy BBQ flavor with chicken</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="pizza4.jpg" alt="Pizza 4">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic margherita with fresh basil</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="sandwitch.jpg" alt="Pizza 5">
+                    <h3>Philly Cheesesteak Sandwich</h3>
+                    <p>Thinly sliced beefsteak cooked to perfection</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="burger1.jpg" alt="Pizza 6">
+                    <h3>Spicy Chicken Burger</h3>
+                    <p>Crispy fried chicken breast seasoned with a fiery blend of spices</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="fries1.jpg" alt="Pizza 6">
+                    <h3>Cajun Spiced Fries</h3>
+                    <p>Crispy fries seasoned with a zesty Cajun spice blend</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="pizza2.jpg" alt="Pizza 6">
+                    <h3>Meat Lovers Pizza</h3>
+                    <p>A feast of meats and cheese</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="bar3.jpg" alt="Pizza 6">
+                    <h3>Smoked Beef Brisket
+                    </h3>
+                    <p>Tender, slow-cooked beef brisket with a rich smoky flavor,</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="snadwitch2.jpg" alt="Pizza 6">
+                    <h3>Philly Cheesesteak Sandwich</h3>
+                    <p>Thinly sliced beefsteak cooked to perfection, smothered with melted provolone cheese.</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="pizza2.jpg" alt="Pizza 6">
+                    <h3>Meat Lovers Pizza</h3>
+                    <p>A feast of meats and cheese</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="slide">
+                    <img src="bar1.jpg" alt="Pizza 6">
+                    <h3>BBQ Chicken Wings</h3>
+                    <p>Tender, slow-cooked beef brisket with a rich smoky flavor</p>
+                    <button class="cart-btn">Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+         
+            <!-- Arrows for sliding -->
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    <h1 class="blog-heading">Our Blog</h1>
+    <section class="blog">
+        
+        <div class="blog-content">
+            <h1>Blog</h1>
+            <img src="pizza4.jpg" alt="">
+            <div class="blog-content-p">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis nulla provident ad modi molestiae? Enim, tempora debitis dolor laborum deserunt animi optio minima cupiditate maxime vero alias asperiores officiis.
+                </p>
+                <a>learn more</a>
+                <a id="icon">
+                    <i class="fa-solid fa-circle-arrow-right" style="color: black;"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="blog-content">
+            <h1>Blog</h1>
+            <img src="burger3.jpg" alt="">
+            <div class="blog-content-p">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis nulla provident ad modi molestiae? Enim, tempora debitis dolor laborum deserunt animi optio minima cupiditate maxime vero alias asperiores officiis.
+                </p>
+                <a>learn more</a>
+                <a id="icon">
+                    <i class="fa-solid fa-circle-arrow-right" style="color: black;"></i>
+                </a>
+            </div>
+        </div>
+    
+    </section>
+    <h1 class="contact-heading">Contact US</h1>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+          
+            <h4>Let's work Together</h4>
+            <p>Feel free to reach out to me for any collaboration, project inquiries, or if you simply want to connect and discuss ideas. Whether you're looking for a beautifully designed website, a dynamic mobile app, or a full-stack solution that meets your business needs, I'm here to help bring your vision to life. With expertise in UI/UX design, Flutter development, and full-stack web development, I am dedicated to delivering high-quality, responsive, and user-friendly solutions. Don't hesitate to contact me; I'm excited to work together and create something extraordinary.</p>
+            <div class="contact-list">
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i></i>aown02322@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +923081412631</li>
+                </ul>
+            </div>
+            <div class="contact-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <form action="" method="">
+                <div class="input-container">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-tag"></i>
+                    <input type="text" name="subject" placeholder="Enter Your Subject">
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-comments"></i>
+                    <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                </div>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+        
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pizzario. All Rights Reserved.</p>
+        <div class="footer-icon">
+        <p>Follow Us On |</p>
+        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

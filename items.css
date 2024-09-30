@@ -1,0 +1,846 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.header{
+   
+    height:100px;
+    width: 100%;
+    background-color:burlywood;
+    display: flex;
+    margin-bottom: 20px;
+     
+    
+     
+       
+    }
+    
+    .navbar {
+      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    
+    }
+    .logo{
+        position: relative;
+        margin-left: 20px;
+        animation: slideright 3s ease forwards;
+        display: flex;
+    
+    }
+    .logo img{
+        width: 70px;height: 70px; border-radius: 50%;
+    }
+    .menu-container {
+        position: relative;
+    }
+    
+    .menu-btn {
+        font-size: 30px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        display: none; /* Hide the hamburger button on larger screens */
+    }
+    
+    .menu-btn:focus {
+        outline: none;
+    }
+    
+    .vertical-menu {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background-color: #333;
+        width: 100px;
+        position: absolute;
+        top: 50px; /* Just under the button */
+        left: 0;
+        border-radius: 5px;
+    }
+    
+    .vertical-menu a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        display: block;
+        text-align: left;
+    }
+    
+    .vertical-menu a:hover {
+        background-color: #575757;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 26px;
+        margin-left: 118%;
+        animation: slideright 5s ease forwards ;
+    
+      
+        
+    }
+    
+    
+    .nav-links a {
+     
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+       
+    }
+    .nav-links a:hover{
+    color: black;
+    
+    }
+    @keyframes slideleft{
+        0%{
+            transform: translatex(300px);
+        }
+        100%{
+            transform: translatey(0px);
+        }
+    }
+    @keyframes slideright{
+        0%{
+            transform: translateX(-150px);
+            opacity: 0;
+        }
+        100%{
+            opacity: 100%;
+            transform: translateY(0px);
+        }
+    }
+    .input-container1 {
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 45px;
+        width: 93%;
+     
+       
+    }
+    
+    .input-container1 i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color:black;
+        font-size: 18px;
+    }
+    
+    .input-container1 input[type="text"]{
+        width: 100%;
+        padding: 15px 15px 15px 45px; /* Add padding to make space for the icon */
+        background-color:rgba(255, 255, 255, 0.72);
+        border: 10px solid black;
+        /* outline-offset: 10px; */
+        
+        border: 1px solid black;
+        height: 60px;
+        border-radius: 5px;
+        /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        font-size: 16px; */
+    }
+    .input-container1 input::placeholder{
+        font-size: 16px;
+        font-style: italic;
+       
+    }
+
+.item-page {
+    padding: 20px;
+}
+
+/* Category List - Horizontal */
+.category-list {
+    margin-top: -20px;
+    margin-left: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    list-style:none;
+    padding: 20px 0 20px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff4b;
+    border-radius:10px;
+
+    
+}
+
+.category-list li {
+    width: 150px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius:10px;
+    text-align: center;
+    padding: 10px 0px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    /* background-color: yellowgreen; */
+    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); */
+
+}
+.category-list li:hover{
+    background-color: rgba(255, 238, 3, 0.975);
+    
+
+}
+/* .category-list li:first-child {
+    background-color: rgba(255, 238, 3, 0.975);
+} */
+
+/* Item Grid */
+.item-grid {
+    /* margin-top: 80px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+margin-top: 60px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 350px;
+    margin-left: 38px;
+    padding: 15px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+
+.item h3 {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item p {
+
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.item #desc{
+    text-align: justify;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.cart-btn, .buy-btn {
+    padding: 8px 15px;
+    background-color:orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  
+}
+
+.buy-btn:hover, .cart-btn:hover {
+    background-color:black;
+}
+
+/* Order Alert Box */
+.order-alert {
+    margin-top: 140px;
+    margin-bottom: 90px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    height: 500px;  /* Fixed height to control overflow */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    text-align: center;
+    overflow-y: auto; /* Add vertical scroll if content exceeds height */
+    scrollbar-width: thin; /* For Firefox - thin scrollbar */
+}
+
+.order-alert::-webkit-scrollbar {
+    width: 8px; 
+   
+}
+
+.order-alert::-webkit-scrollbar-thumb {
+    background-color: #e5dfdf;  /* Color of the scroll thumb */
+    border-radius: 4px;  
+    /* Rounded corners for the scroll thumb */
+}
+
+.order-alert::-webkit-scrollbar-thumb:hover {
+    background-color: #ddd5d5;  /* Darker shade when hovered */
+}
+
+.order-alert #order-item-name{
+    text-align: center;
+    margin-bottom: 7px;
+}
+.order-alert #order-item-price{
+    margin-bottom: 5px;
+}
+
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.quantity-control button {
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity-control span {
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+.confirm-buy-btn {
+    width: 100px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.payment-method {
+    display: grid;
+    grid-template-columns: repeat(1,ifr);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.payment-method label {
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.payment-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.address-input, .card-input {
+    margin-top: 20px;
+    
+ 
+}
+
+.address-input input, .card-input input {
+    text-align: justify;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.confirm-buy-btn {
+    width: 100px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    margin-top: 40px;
+}
+footer .footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-icon a{
+    color: orange;
+    padding: 0px 10px;
+    
+}
+footer .footer-icon a:hover{
+    color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 360px) {
+ body {
+      
+        /* justify-content: center;
+        align-items: center; */
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    .header{
+       
+        height:100px;
+        width: 100%;
+        background-color:burlywood;
+        display: flex;
+        margin-bottom: 20px;
+         
+        
+         
+           
+        }
+        
+        .navbar {
+  
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        
+        }
+        .logo{
+        
+            position: relative;
+            margin-left: 20px;
+            animation: slideright 3s ease forwards;
+            display: flex;
+        
+        }
+        .logo img{
+            width: 70px;height: 70px; border-radius: 50%;
+        }
+        .logo h1{
+            font-size: 19px;
+        }
+        
+        
+        
+        .menu-btn {
+            display: block;
+            margin-left: 140px;
+           /* Show the hamburger button only on screens 360px or smaller */
+        }
+        
+        .vertical-menu {
+            margin-top: -8px;
+           margin-left: 60px;
+           width: 116px;
+           z-index: 9999; 
+           display: flex;
+           flex-direction: column; /* Ensures vertical alignment */
+           background-color: orange;
+           color: black;
+           border: 2px solid #ddd; /* Optional styling */
+           border-radius: 8px;
+           padding: 10px;
+        }
+        .vertical-menu :hover {
+            background-color: black;
+            color:white;
+        }
+        .vertical-menu a{
+            text-align: center;
+        
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: none;
+            gap: 26px;
+            margin-left: 122%;
+            animation: slideright 5s ease forwards ;
+        
+          
+            
+        }
+        
+        
+        .nav-links a {
+         
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+           
+        }
+        .nav-links a:hover{
+        color: black;
+        
+        } 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        @keyframes slideleft{
+            0%{
+                transform: translatex(300px);
+            }
+            100%{
+                transform: translatey(0px);
+            }
+        }
+        @keyframes slideright{
+            0%{
+                transform: translateX(-150px);
+                opacity: 0;
+            }
+            100%{
+                opacity: 100%;
+                transform: translateY(0px);
+            }
+        }
+        .input-container1 {
+            position: relative;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 45px;
+            width:280px;
+         
+           
+        }
+        
+        .input-container1 i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color:black;
+            font-size: 18px;
+        }
+        
+        .input-container1 input[type="text"]{
+            width: 100%;
+            padding: 15px 15px 15px 45px; /* Add padding to make space for the icon */
+            background-color:rgba(255, 255, 255, 0.72);
+            border: 10px solid black;
+            /* outline-offset: 10px; */
+            
+            border: 1px solid black;
+            height: 40px;
+            border-radius: 5px;
+            /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+            font-size: 16px; */
+        }
+        .input-container1 input::placeholder{
+            font-size: 16px;
+            font-style: italic;
+           
+        }
+    
+    .item-page {
+        padding: 20px;
+    }
+    
+    /* Category List - Horizontal */
+    .category-list {
+        margin-top: -20px;
+        margin-left: 0px;
+        width: 320px;
+        display: flex;
+        justify-content: space-around;
+        list-style:none;
+        padding: 10px 0 10px;
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff4b;
+        border-radius:10px;
+    
+        
+    }
+    
+    .category-list li {
+        width: 50px;
+        background-color: white;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius:10px;
+        text-align: center;
+        padding: 10px 0px 10px;
+        font-size: 10px;
+        cursor: pointer;
+        /* background-color: yellowgreen; */
+        /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); */
+    
+    }
+    .category-list li:hover{
+        background-color: rgba(255, 238, 3, 0.975);
+        
+    
+    }
+
+    /* .category-list li:first-child {
+        background-color: rgba(255, 238, 3, 0.975);
+    } */
+    
+    /* Item Grid */
+    .item-grid {
+        /* margin-top: 80px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .item {
+    margin-top: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+        width: 150px;
+        margin-left: 8px;
+        padding: 5px 5px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    
+    .item img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        
+    }
+    
+    .item h3 {
+        text-align: left;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .item p {
+    
+        text-align: justify;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1; /* Limits the paragraph to 3 lines */
+        line-clamp: 1; /* Non-webkit standard, for future browsers */
+        white-space: normal;
+    }
+    .item #desc{
+        text-align: justify;
+        font-weight: normal;
+        font-size: 12px;
+    }
+    
+    .cart-btn, .buy-btn {
+        width: 50px;
+        padding: 5px 5px;
+        background-color:orange;
+        color: white;
+        border: none;
+        font-size: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 5px;
+      
+    }
+    
+    .buy-btn:hover, .cart-btn:hover {
+        background-color:black;
+    }
+    
+    /* Order Alert Box */
+    .order-alert {
+        margin-top: 100px;
+        margin-bottom: 90px;
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        width: 300px;
+        height: 400px;  /* Fixed height to control overflow */
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: none;
+        z-index: 1000;
+        text-align: center;
+        overflow-y: auto; /* Add vertical scroll if content exceeds height */
+        scrollbar-width: thin; /* For Firefox - thin scrollbar */
+    }
+    
+    .order-alert::-webkit-scrollbar {
+        width: 8px; 
+       
+    }
+    
+    .order-alert::-webkit-scrollbar-thumb {
+        background-color: #e5dfdf;  /* Color of the scroll thumb */
+        border-radius: 4px;  
+        /* Rounded corners for the scroll thumb */
+    }
+    
+    .order-alert::-webkit-scrollbar-thumb:hover {
+        background-color: #ddd5d5;  /* Darker shade when hovered */
+    }
+    
+    .order-alert #order-item-name{
+        text-align: center;
+        margin-bottom: 7px;
+    }
+    .order-alert #order-item-price{
+        margin-bottom: 5px;
+    }
+    
+    .quantity-control {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .quantity-control button {
+        padding: 8px 12px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    
+    .quantity-control span {
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+    
+    .confirm-buy-btn {
+        width: 70px;
+        margin-top: 30px;
+        padding: 6px 12px;
+        background-color:orange;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .payment-method {
+        display: grid;
+        grid-template-columns: repeat(1,ifr);
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .payment-method label {
+        font-size: 16px;
+        margin-right: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .payment-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    
+    .address-input, .card-input {
+        margin-top: 20px;
+        
+     
+    }
+    
+    .address-input input, .card-input input {
+        text-align: justify;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .confirm-buy-btn {
+        width: 100px;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    footer{
+        background-color: #333;
+        text-align: center;
+        padding: 20px;
+        height: 100px;
+        margin-top: 40px;
+        width: 100%;
+    }
+    footer .footer-icon{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    footer .footer-icon a{
+        color: orange;
+        padding: 0px 10px;
+        
+    }
+    footer .footer-icon a:hover{
+        color: black;
+        
+    }
+}

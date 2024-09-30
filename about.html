@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Pizzario</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+
+        
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="pizzariologo.jpg" style="" alt="">
+                    <h1 style="margin-top: 30px; margin-left: 5px; font-style: italic;">Pizzario</h1>
+                </div>
+                <div class="menu-container">
+                
+                    <button class="menu-btn"  style="" onclick="toggleMenu()">
+                        &#9776; <!-- This is the Unicode for the three horizontal lines -->
+                    </button>
+            
+                   
+                    <div id="menu" style="display: none;" class="vertical-menu">
+                        <a href="index.html">Home</a>
+                    <a href="items.htm">Buy</a>
+                        <a href="cart.html">MyCart</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html" style="margin-right: -16px;">Login</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-right-to-bracket" style="color: black;size: 40px;"></i></a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <section class="about-us-container">
+        <div class="about-header">
+            <img src="pizzariologo.jpg" alt="Pizzario Logo" class="about-logo">
+            <h1>About Us</h1>
+            <p>Welcome to Pizzario - The place for delicious, authentic pizzas made with love and passion!</p>
+        </div>
+    
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>
+                Pizzario started with a simple idea: to bring the authentic taste of Italy right to your doorstep. 
+                Since our establishment, we have been dedicated to crafting the perfect pizza, using only the freshest ingredients 
+                and traditional recipes passed down through generations.
+            </p>
+            <h2>Meet the Owner</h2>
+            <div class="owner-section">
+               
+                <div class="owner-details">
+                    <h3>Zain ALi</h3>
+                    <p>
+                        Zain Ali is the visionary behind Pizzario. With a passion for authentic Italian cuisine, he founded Pizzario to bring the 
+                        rich, traditional flavors of pizza to the community. Abdullah believes in quality, innovation, and creating a friendly environment 
+                        where customers feel at home.
+                    </p>
+                    <p>
+                        His journey in the food industry started from humble beginnings, but with dedication and a love for pizza, Pizzario has grown 
+                        into a beloved local spot. When Abdullah isn't in the kitchen experimenting with new recipes, he's spending time with his family and enjoying a good book.
+                    </p>
+                </div>
+                <img src="zain2.jpg" alt="Owner" class="owner-photo">
+            </div>
+            <h2>Our Values</h2>
+            <ul class="Values">
+                <li><strong>Quality Ingredients:</strong> We use only the freshest and highest-quality ingredients in every pizza we make.</li>
+                <li><strong>Passionate Team:</strong> Our team of chefs are passionate about pizza and committed to making every slice delicious.</li>
+                <li><strong>Community First:</strong> We love our local community and strive to give back in every way possible.</li>
+            </ul>
+    
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="shef.jpg" alt="Chef" class="team-photo">
+                    <h3>Travis Head</h3>
+                    <p>Head Chef</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="chef.jpg" alt="Chef" class="team-photo">
+                    <h3>Bamsi Bey</h3>
+                    <p>Head Chef</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="manager.jpg" alt="Chef" class="team-photo">
+                    <h3>Joseph Henery</h3>
+                    <p>Manager</p>
+                </div>
+
+
+               
+            </div>
+          
+    
+            <h2>Location</h2>
+            <p>We are located at 123 Pizza Street, Pizzatown, Islambad,Pakistan. Come by and visit us anytime!</p>
+            <div class="maploc" id="map"></div>
+        </div>
+    </section>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC46NG2a_C1eNYLMF7EKhRAlx_yEouZXI0&callback=initMap">
+</script>
+
+<script>
+  function initMap() {
+    var pizzarioLocation = {lat: 33.693, lng: 73.0639 }; // Replace with your latitude and longitude
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: pizzarioLocation,
+    });
+    var marker = new google.maps.Marker({
+      position: pizzarioLocation,
+      map: map,
+      title: "Pizzario - Best Pizza in Town!",
+    });
+  }
+</script>
+    
+  
+<footer>
+    <div>
+        
+    
+    </div>
+    <p>&copy; 2024 Pizzario. All Rights Reserved.</p>
+    <div class="footer-icon">
+    <p>Follow Us On |</p>
+    <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
